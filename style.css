@@ -16,20 +16,22 @@ a, p{
     text-decoration: none;
 }
 
-/* menu */
+/* MENU */
 
-/* .header{
+.header{
     display: flex;
     justify-content: space-between;
     height: 100px;
     align-items: center;
     background-color: rgb(7, 23, 44);
+
 }
 
 nav{
     display: flex;
     align-items: center;
     gap: 40px;
+    
 }
 
 h1{
@@ -55,7 +57,7 @@ a{
 a:hover{
     color: rgb(80, 204, 204);
 }
-*/
+
 .header img{
     width: 60px;
     margin-right: 20px;
