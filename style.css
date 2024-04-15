@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body, nav, ul, li, a, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a, p{
+    text-decoration: none;
+}
+
+/* menu */
+
+/* .header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    background-color: rgb(7, 23, 44);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+
+ul{
+    display: flex;
+    gap: 15px;
+}
+
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    color: rgb(80, 204, 204);
+}
+*/
+.header img{
+    width: 60px;
+    margin-right: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.header img:hover{
+    transform: scale(1.2);
+} 
