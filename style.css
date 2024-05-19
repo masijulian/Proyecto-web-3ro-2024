@@ -1,3 +1,4 @@
+@import url('contenedor.css');
 *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -16,6 +17,9 @@ a, p{
     text-decoration: none;
 }
 
+body{
+    background: linear-gradient(90deg, rgb(7, 26, 51) 10%, rgba(47,143,162,0.8463760504201681) 100%);
+}
 /* MENU */
 
 .header{
@@ -23,7 +27,8 @@ a, p{
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    background-color: rgb(7, 23, 44);
+    /* background-color: rgb(7, 26, 51); */
+    background-color: transparent;
 
 }
 
@@ -31,7 +36,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 40px;
-    
+
 }
 
 h1{
@@ -62,8 +67,121 @@ a:hover{
     width: 60px;
     margin-right: 20px;
     transition: all 0.3s ease-out;
+    filter: brightness(0)
 }
 
 .header img:hover{
     transform: scale(1.2);
-} 
+}
+
+/* imagenes */
+.fotos{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.fotos img{
+    width: 350px;
+    margin: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.fotos img:hover{
+    transform: scale(1.05);
+}
+
+.outside-banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.banner img{
+    width: 60vw;
+    height: 40vh;
+}
+
+.banner p{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    padding: 10px;
+    text-align: justify;
+}
+
+.banner h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+/* Carousel */
+#carousel{
+    display: flex;
+    justify-content: center;
+}
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
