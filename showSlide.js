@@ -1,3 +1,4 @@
+/* This is the JavaScript code for the carousel */
 const slides = document.querySelector('.slides');
 const slide = document.querySelectorAll('.slide');
 const prev = document.querySelector('.prev');
