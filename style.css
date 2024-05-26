@@ -66,7 +66,7 @@ a:hover{
     width: 60px;
     margin-right: 20px;
     transition: all 0.3s ease-out;
-    filter: brightness(0)
+    filter: brightness(200%)
 }
 
 .header img:hover{
@@ -228,4 +228,31 @@ a:hover{
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* imagenes flex y grid */
+
+.imagenes-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px;
+}
+
+.imagenes-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
+}
+
+.imagenes-flex img{
+    width: 350px;
+}
+
+.imagenes-grid img{
+    width: 350px;
 }
