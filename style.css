@@ -17,10 +17,6 @@ a, p{
     text-decoration: none;
 }
 
-body{
-    background:rgb(7, 26, 51) 10%;
-}
-
 .header{
     display: flex;
     justify-content: space-between;
@@ -28,11 +24,9 @@ body{
     align-items: center;
     /* background-color: rgb(7, 26, 51); */
     background-color: transparent;
-
 }
 
 nav{
-    display: flex;
     align-items: center;
     gap: 40px;
 
@@ -58,6 +52,13 @@ a{
     transition: all 0.4s ease;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.index-body{
+    height: 100vh;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+
 a:hover{
     color: rgb(80, 204, 204);
 }
@@ -128,7 +129,7 @@ a:hover{
 /* container and box */
 
 #container{
-    display: flex;
+display: flex;
 }
 
 .container{
@@ -255,4 +256,104 @@ a:hover{
 
 .imagenes-grid img{
     width: 350px;
+}
+
+/* vid */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ajusta según el diseño */
+     /* Ajusta según el diseño */
+}
+
+
+/* .video-background {
+    max-height: 100%;
+}
+
+.overlay-text {
+    position: absolute; 
+    color: white;
+    font-size: 7rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-bottom: 1350px;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay-text:hover {
+    cursor: pointer;
+    color: rgb(44, 101, 187);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.644);
+    font-size: 7rem;
+} */
+
+#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+nav {
+    background-color: transparent;
+    margin-top:50px;
+}
+
+ul {
+    gap: 50px;
+}
+
+.main-ul {
+    display: flex;
+}
+
+.main-ul li {
+    display: inline-block;
+    position: relative; /* Añadido para permitir el uso de position: absolute en el submenú */
+}
+
+.main-menu h1 {
+    font-size: 6rem;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.4s ease-out;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.main-menu a:hover {
+    color: #a2c9a2;
+}
+
+.main-li ul {
+    display: none;
+    position: absolute; /* Añadido para evitar que el submenú afecte el tamaño del main-ul */
+    top: 100%; /* Posiciona el submenú justo debajo del main-li */
+    left: 0;
+    transition: all 0.5s ease-in;
+}
+
+.main-li:hover ul {
+    display: block;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.212);
+    width: 120px;
+    padding: 10px;
+    text-align: center;
 }
